@@ -15,6 +15,26 @@
                     <flux:sidebar.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>
                         {{ __('Dashboard') }}
                     </flux:sidebar.item>
+
+                    <flux:sidebar.item icon="users" :href="route('division.index')" :current="request()->routeIs('division.index')" wire:navigate>
+                        {{ __('Divisions') }}
+                    </flux:sidebar.item>
+
+                    <flux:sidebar.item icon="folder" :href="route('program.index')" :current="request()->routeIs('program.index')" wire:navigate>
+                        {{ __('Programs') }}
+                    </flux:sidebar.item>
+
+                    <flux:sidebar.item icon="calendar" :href="route('agenda.index')" :current="request()->routeIs('agenda.index')" wire:navigate>
+                        {{ __('Agendas') }}
+                    </flux:sidebar.item>
+
+                    <flux:sidebar.item icon="document" :href="route('documentation.index')" :current="request()->routeIs('documentation.index')" wire:navigate>
+                        {{ __('Documentations') }}
+                    </flux:sidebar.item>
+
+                    <flux:sidebar.item icon="chart-bar" :href="route('report.index')" :current="request()->routeIs('report.index')" wire:navigate>
+                        {{ __('Reports') }}
+                    </flux:sidebar.item>
                 </flux:sidebar.group>
             </flux:sidebar.nav>
 
